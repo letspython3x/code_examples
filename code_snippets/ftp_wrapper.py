@@ -31,7 +31,7 @@ class Ftp():
             print('Hey : ' + filename)
 
         print("Inside list File of Ftp")
-        print(self.server, self.user, self.password, self.working_dir)
+        print(self.host, self.user, self.password, self.working_dir)
 
     def put_file(self):
         session = self.connect()
