@@ -1,5 +1,6 @@
-from code_snippets.scripts import simple_calculator as sc
+from code_examples.code_snippets import simple_calculator as sc
 import pytest
+
 
 X_OPERAND1 = 100
 X_OPERAND2 = 10
