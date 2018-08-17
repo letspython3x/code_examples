@@ -1,3 +1,6 @@
+# Calculates the Greatest Common Divisor between the 2 numbers.
+
+
 def gcd(num1, num2):
     div = 1
     i = 1
@@ -15,4 +18,5 @@ def main():
     print(gcd(2100, 219))
 
 
-main()
+if __name__ == "__main__":
+    main()
