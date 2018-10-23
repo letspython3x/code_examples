@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 from code_snippets.scripts import simple_calculator as sc
 import pytest
 
+=======
+from code_examples.code_snippets import simple_calculator as sc
+import pytest
+
+
+>>>>>>> 8c00e40a98c5b6c1094de0379603e0fbb89c4d85
 X_OPERAND1 = 100
 X_OPERAND2 = 10
 

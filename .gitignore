@@ -1,0 +1,5 @@
+__pycache__
+tests/.pytest_cache
+code_snippets/.pytest_cache/
+code_snippets/temp.txt
+code_snippets/unix
