@@ -40,16 +40,21 @@ def load_csv_to_db(fname):
 
 def connect_db():
     conn = db.connect(host="127.0.0.1", port="5432", database="testdb", user="postgres", password="postgres")
-    print("Opened database successfully")
-    cur = conn.cursor()
 
-    query = "INSERT INTO test_table_1 VALUES ('Akshay', '3');"
-    cur.execute(query)
-    conn.commit()
+
+    if conn:
+        print("Opened database successfully")
+        cur = conn.cursor()
+	
+
+    query = "INSERT INTO test_table_1 VALUES ('Prakhar', '4');"
+    #cur.execute(query)
+    #cur.execute("""COMMIT""")
+    #conn.commit()
 
     query = "select name from test_table_1;"
     r = cur.execute(query)
-    conn.rollback()
+    # conn.rollback()
     print(query)
     print("Query results: ", r.fetchall())
     conn.close()
